@@ -132,16 +132,9 @@ const Dashboard = () => {
     <tr key={item.code}>
       
       <td data-label="Short Code">
-        <a
-         href={`http://localhost:5000/${item.code}`}
-
-
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{ fontWeight: "600" }}
-        >
+       
           {item.code}
-        </a>
+        
       </td>
 
       <td className="url" data-label="URL" title={item.url}>
