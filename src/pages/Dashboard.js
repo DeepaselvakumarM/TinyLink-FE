@@ -130,12 +130,27 @@ const Dashboard = () => {
 <tbody>
   {links.map((item) => (
     <tr key={item.code}>
+
+
       
-      <td data-label="Short Code">
+      {/* <td data-label="Short Code">
        
           {item.code}
         
-      </td>
+      </td> */}
+
+      <td data-label="Short Code">
+  <a 
+    href={`https://tinylink-pp16.onrender.com/${item.code}`} 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    {item.code}
+  </a>
+</td>
+
+
+
 
       <td className="url" data-label="URL" title={item.url}>
         {item.url}
